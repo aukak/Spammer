@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayFab Spammer Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PlayFab API Spammer</h1>
+        <p>This tool allows you to spam PlayFab API calls. Be cautious when using this tool!</p>
+
+        
+        <form id="spamForm">
+            <label for="apiTitleId">PlayFab Title ID:</label>
+            <input type="text" id="apiTitleId" name="apiTitleId" required>
+            <br>
+
+            <label for="secretKey">PlayFab Secret Key:</label>
+            <input type="password" id="secretKey" name="secretKey" required>
+            <br>
+
+            <label for="spamCount">Number of Requests:</label>
+            <input type="number" id="spamCount" name="spamCount" value="10" min="1">
+            <br>
+
+            <button type="submit" id="spamButton">Start Spamming</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
